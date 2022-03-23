@@ -2,12 +2,12 @@
 
 source 'https://rubygems.org'
 
+gem 'pg'
 gem 'sinatra'
 gem 'sinatra-contrib'
-gem 'pg'
 
 group :development, :test do
-  gem 'rubocop', '1.20'
   gem 'capybara'
   gem 'rspec'
+  gem 'rubocop', '~> 1.26', require: false
 end
